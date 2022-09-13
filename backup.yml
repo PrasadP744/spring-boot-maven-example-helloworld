@@ -4,10 +4,9 @@
   become: true
   hosts: 45.77.42.163
   connection: remote
-  remote_user: subramanya
-   tasks:
+      tasks:
 
-   copy:
+      copy:
         remote_src: /home/ftphome/*
         remote_dest: /etc/ftphome
         owner: pinnacleftp
