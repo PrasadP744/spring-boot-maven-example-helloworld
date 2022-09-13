@@ -8,11 +8,11 @@
 
     - name: Example copying file with owner and permissions
       copy:
-        src: /home/ftphome/*
-        dest: /etc/ftphome
+        remote_src: /home/ftphome/*
+        remote_dest: /etc/ftphome
         owner: pinnacleftp
         group: pinnacleftp
-        mode: 0777
+        
 
 
 
