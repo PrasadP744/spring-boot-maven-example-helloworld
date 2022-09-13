@@ -1,7 +1,7 @@
-- hosts: all 
-- name: If follow=yes, /path/to/file will be overwritten by contents of foo.conf
+- hosts : all 
+- name : If follow=yes, /path/to/file will be overwritten by contents of foo.conf
   ansible.builtin.copy:
-    src: /home/ftphome/*
-    dest: /etc/ftphome/        
-    follow: yes
+    src : /home/ftphome/*
+    dest : /etc/ftphome/        
+    follow : yes
 
