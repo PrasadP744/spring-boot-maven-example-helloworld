@@ -1,7 +1,7 @@
 ---
 - name: My first play to copy files
   become: true
-  hosts: all
+  hosts: localhost
   remote_user: subramanya
 
   tasks:
