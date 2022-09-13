@@ -1,7 +1,23 @@
-- copy:
-    src: /home/ftphome/*
-    dest: /etc/ftphome
-    owner: pinnacleftp
-    group: pinnacleftp
-    mode: 0644
-    follow: yes
+---
+- name: My first play to copy files
+  become: true
+  hosts: all
+  remote_user: subramanya
+
+  tasks:
+
+    - name: Example copying file with owner and permissions
+      copy:
+        src: /home/ftphome/*
+        dest: /etc/ftphome
+        owner: pinnacleftp
+        group: pinnacleftp
+        mode: 0777
+
+
+
+
+
+
+
+
