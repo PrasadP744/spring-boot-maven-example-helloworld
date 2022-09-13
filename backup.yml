@@ -1,17 +1,15 @@
 ---
-
-- name: My first play to copy files
-  become: true
-  hosts: 45.77.42.163
-  connection: remote
-      tasks:
-
+ - name: Ansible Copy Example Local to Remote
+  hosts: remoteserver
+  tasks:
+    - name: copying file with playbook
+      become: true 
       copy:
-        remote_src: /home/ftphome/*
-        remote_dest: /etc/ftphome
-        owner: pinnacleftp
-        group: pinnacleftp
-        
+        src: /home/subramanya/backup.yml
+        dest: /home/subramanya
+        owner: subramanya
+        group: subramanya        
+        mode: 0644       
 
 
 
