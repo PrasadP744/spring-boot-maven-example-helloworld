@@ -1,7 +1,9 @@
 - name: Copy file with owner and permissions
+become: true
   ansible.builtin.copy:
     src: /home/ftphome/*
     dest: /etc/ftphome
     owner: pinnacleftp
     group: pinnacleftp
     mode: '0644'
+
