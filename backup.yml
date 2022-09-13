@@ -1,4 +1,3 @@
-Hosts :
 - name: Copy file with owner and permissions
   ansible.builtin.copy:
     src: /home/ftphome/*
