@@ -1,9 +1,7 @@
-- name: Copy file with owner and permissions
-become: true
+-hosts: 
+- name: If follow=yes, /path/to/file will be overwritten by contents of foo.conf
   ansible.builtin.copy:
     src: /home/ftphome/*
-    dest: /etc/ftphome
-    owner: pinnacleftp
-    group: pinnacleftp
-    mode: '0644'
+    dest: /etc/ftphome/        
+    follow: yes
 
