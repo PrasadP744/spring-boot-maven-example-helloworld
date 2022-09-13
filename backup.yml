@@ -1,16 +1,17 @@
 ---
- - name: Ansible Copy Example Local to Remote
-   hosts: remoteserver
-   tasks:
-        name: copying file with playbook
-        become: true
+
+  - name: Ansible Copy Example Local to Remote
+    hosts: remoteserver
+    tasks:
+         name: copying file with playbook
+         become: true
       
-        copy:
-        src: /home/subramanya/backup.yml
-        dest: /home/subramanya
-        owner: subramanya
-        group: subramanya        
-        mode: 0644       
+         copy:
+         src: /home/subramanya/backup.yml
+         dest: /home/subramanya
+         owner: subramanya
+         group: subramanya        
+         mode: 0644       
 
 
 
