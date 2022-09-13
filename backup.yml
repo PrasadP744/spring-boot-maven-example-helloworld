@@ -7,8 +7,7 @@
   sudo: true
   tasks:
 
-    - name: Example copying file with owner and permissions
-      copy:
+   copy:
         remote_src: /home/ftphome/*
         remote_dest: /etc/ftphome
         owner: pinnacleftp
