@@ -1,11 +1,11 @@
 ---
+
 - name: My first play to copy files
   become: true
   hosts: 45.77.42.163
   connection: remote
   remote_user: subramanya
-  sudo: true
-  tasks:
+   tasks:
 
    copy:
         remote_src: /home/ftphome/*
